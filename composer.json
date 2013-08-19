@@ -1,0 +1,24 @@
+{
+    "name": "webmakers/symfony-setting-bundle",
+    "type": "symfony-bundle",
+    "description": "Bundle for Symfony2 to store site settings in database table",
+    "keywords": ["config", "customize", "options", "preferences", "settings"],
+    "homepage": "http://github.com/Webmakers/symfony-setting-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khaled Attia",
+            "email": "khaledattia@gmail.com",
+            "homepage": "http://khal3d.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/framework-bundle": "~2.1"
+    },
+    "autoload": {
+        "psr-0": { "Webmakers\\SettingBundle": "" }
+    },
+    "target-dir": "Webmakers/SettingBundle"
+}
