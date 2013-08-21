@@ -12,4 +12,14 @@ use Doctrine\ORM\EntityRepository;
  */
 class SettingRepository extends EntityRepository
 {
+
+    public function getSetting($name)
+    {
+        $setting = $this->findOneByName($name);
+        if( empty($setting) ) {
+            throw new \RuntimeException(sprintf('Setting "%s" couldn\'t be found.', $name));
+        }
+
+        return $setting;
+    }
 }
