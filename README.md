@@ -21,6 +21,8 @@ and then running
 composer update webmakers/symfony-setting-bundle
 ```
 
+> Note that once we had a stable version tagged you should use a tagged release instead of the master branch.
+
 #### Enable the bundle
 ```php
 // in app/AppKernel.php
